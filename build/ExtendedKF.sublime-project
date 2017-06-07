@@ -1,0 +1,47 @@
+{
+	"folders":
+	[
+		{
+			"path": "../"
+		}
+	],
+	"build_systems":
+	[
+		{
+			"name": "ExtendedKF - all",
+			"cmd": ["C:/toolkits/mingw-w64/mingw64/bin/mingw32-make.exe", "-f", "Makefile", "all"],
+			"working_dir": "${project_path}",
+			"file_regex": "^(..[^:]*)(?::|\\()([0-9]+)(?::|\\))(?:([0-9]+):)?\\s*(.*)"
+		},
+		{
+			"name": "ExtendedKF - clean",
+			"cmd": ["C:/toolkits/mingw-w64/mingw64/bin/mingw32-make.exe", "-f", "Makefile", "clean"],
+			"working_dir": "${project_path}",
+			"file_regex": "^(..[^:]*)(?::|\\()([0-9]+)(?::|\\))(?:([0-9]+):)?\\s*(.*)"
+		},
+		{
+			"name": "ExtendedKF - rebuild_cache",
+			"cmd": ["C:/toolkits/mingw-w64/mingw64/bin/mingw32-make.exe", "-f", "Makefile", "rebuild_cache"],
+			"working_dir": "${project_path}",
+			"file_regex": "^(..[^:]*)(?::|\\()([0-9]+)(?::|\\))(?:([0-9]+):)?\\s*(.*)"
+		},
+		{
+			"name": "ExtendedKF - ExtendedKF",
+			"cmd": ["C:/toolkits/mingw-w64/mingw64/bin/mingw32-make.exe", "-f", "Makefile", "ExtendedKF"],
+			"working_dir": "${project_path}",
+			"file_regex": "^(..[^:]*)(?::|\\()([0-9]+)(?::|\\))(?:([0-9]+):)?\\s*(.*)"
+		},
+		{
+			"name": "ExtendedKF - ExtendedKF/fast",
+			"cmd": ["C:/toolkits/mingw-w64/mingw64/bin/mingw32-make.exe", "-f", "Makefile", "ExtendedKF/fast"],
+			"working_dir": "${project_path}",
+			"file_regex": "^(..[^:]*)(?::|\\()([0-9]+)(?::|\\))(?:([0-9]+):)?\\s*(.*)"
+		},
+		{
+			"name": "ExtendedKF - edit_cache",
+			"cmd": ["C:/toolkits/mingw-w64/mingw64/bin/mingw32-make.exe", "-f", "Makefile", "edit_cache"],
+			"working_dir": "${project_path}",
+			"file_regex": "^(..[^:]*)(?::|\\()([0-9]+)(?::|\\))(?:([0-9]+):)?\\s*(.*)"
+		}
+	]
+}
